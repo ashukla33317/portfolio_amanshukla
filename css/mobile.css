@@ -1,0 +1,116 @@
+@media only screen and (max-width: 1066px) {
+  .skills-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .home-background {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile {
+    margin-top: 8rem;
+    width: 80%;
+    height: 80%;
+    margin-left: 0;
+  }
+  .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 33.5rem;
+  }
+}
+@media only screen and (max-width: 1174px) {
+  .work__link{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+@media only screen and (max-width: 928px) {
+  .hamburger {
+    display: block;
+    z-index: 3;
+  }
+  .navbar {
+    text-align: center;
+  }
+  .nav-menu {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    transition: 0.3s ease-out;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: unset;
+  }
+  .nav-item:nth-child(1) {
+    margin-top: 13rem;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .nav-link {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+}
+@media only screen and (max-width: 752px) {
+  html {
+    font-size: 50%;
+  }
+  .abt-flex {
+    justify-content: center;
+  }
+  .home-content {
+    left: 8rem;
+    top: 20rem;
+  }
+  .nav-logo {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 488px) {
+  html {
+    font-size: 50%;
+  }
+  .contact-right input {
+    grid-column: 1 / span 2;
+  }
+  .contact-right textarea {
+    margin-top: -5rem;
+  }
+  .home-content {
+    left: 3rem;
+  }
+  .nav-logo {
+    margin-left: -4rem;
+  }
+  @media only screen and (max-width: 428px) {
+    .skills-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

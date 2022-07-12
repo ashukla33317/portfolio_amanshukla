@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display flex and grid practice</title>
+</head>
+<style>
+    .parent{
+        /* width: 80vw; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        transition: all .5s linear;
+    }
+    .child{
+        height: 18rem;
+        flex: 1 1 18rem;
+        background-color: rebeccapurple;
+        margin: 2rem;
+
+    }
+    .p{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,  minmax(300px, 1fr));
+        justify-content: center;
+        width: 80vw;
+        margin: 0 auto;
+        grid-gap: 1rem;
+        transition: all .3s linear;
+    }
+    .c{
+        height: 20rem;
+        background-color: red;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>css flex</h1>
+    
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</div>
+
+<div class="containers">
+    <h1>css grid</h1>
+    <div class="p">
+        <div class="c">1</div>
+        <div class="c">2</div>
+        <div class="c">3</div>
+        <div class="c">4</div>
+        <div class="c">5</div>
+        <div class="c">6</div>
+        <div class="c">7</div>
+        <div class="c">8</div>
+        <div class="c">9</div>
+    </div>
+</div>
+</body>
+</html>
